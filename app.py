@@ -7,6 +7,7 @@ import re
 from collections import defaultdict
 import math
 import nltk
+import os
 try:
     from nltk.corpus import stopwords
 except ImportError:
