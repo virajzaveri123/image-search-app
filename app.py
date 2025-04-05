@@ -19,7 +19,7 @@ from nltk.stem import PorterStemmer
 app = Flask(__name__)
 
 # Load processed metadata
-df = pd.read_csv("/Users/virajzaveri/Viraj Mac/2025/DCU/Mechanics of Search/Viraj_Zaveri_MoS_Assignment2/pexels_MoS2_final_processed.csv")
+df = pd.read_csv("pexels_MoS2_final_processed.csv")
 image_lookup = dict(zip(df["id"].astype(str), df["image_url"]))
 
 # Load NLP tools
